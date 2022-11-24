@@ -1,0 +1,25 @@
+﻿<form method="post" asp-controller="Assign" asp-action="Post" enctype="multipart/form-data">
+ <div>
+     <div style="display:flex;">
+       <label for="Name">Name</label>
+       <div>
+       <input type="text" name="Name" style="margin-left:70px; border:3px solid; border-color:red;">
+       </div>
+     </div>
+     <div style="display:flex; margin-top:15px;">
+        <label for="Phonenumber">Phonenumber</label>
+        <div style="margin-left:12px;">
+        <input type="text" name="Phonenumber"  style=" border:3px  solid; border-color:red;" >
+        </div>
+     </div>
+     <div style="display:flex; margin-top:15px;">
+        <label for="Image">Image:</label> 
+        <div style="margin-left:65px;">
+          <input type="file" name="Imagename" style="border:3px solid;border:5px solid; border-color:blue;width:100px; border-radius:10px;">
+        </div>
+     </div>
+     <div style="margin-left:180px; margin-top:15px;">
+        <button type="submit" style="margin:auto; width:80px; border:solid; border-color:darkgreen; border-radius:10px;" >Submit</button>
+     </div>
+  </div>
+  </form>

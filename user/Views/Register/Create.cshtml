@@ -1,0 +1,46 @@
+﻿<head>
+    <style>
+        .box{
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" asp-controller="Register" asp-action="Create">
+        <h4>Register:</h4>
+             <label for="Name" ><b>Name</b><span style="color:red;">&#42</span></label>
+           <div class="box">
+              <div>
+                 <input type="text" name="Name">
+                 <p>First</p>
+              </div>
+              <div>
+                <label for="Surname"></label>
+                <input type="text" name="Surname">
+                <p>Last</p>
+              </div>
+           </div>
+        <label for="Username"><b>Username</b><span style="color:red;">&#42</span></label>
+           <div class="pad">
+            <input type="text" name="Username" style="width:384px;">
+           </div>
+        <label for="Email" ><b>Email</b><span style="color:red;">&#42</span></label>
+           <div class="pad">
+            <input type="text" name="Email" style="width:384px;">
+           </div>
+        <label for="Phonenumber"><b>Phonenumbe</b><span style="color:red;">&#42</span></label>
+           <div class="pad">
+            <input type="tel" name="Phonenumber" style="width:384px;" >
+           </div class="pad">
+        <label for="Password"><b>Password</b><span style="color:red;">&#42</span></label>
+           <div class="pad">
+            <input type="text" name="Password" style="width:384px;" >
+           </div class="pad">
+        <label for="Shortbio"><b>Short Bio</b><span style="color:red;">&#42</span></label>
+           <div class="pad">
+            <input type="text" name="Shortbio" style="width:384px; height:50px;" >
+            <p>Share a little information about yourself</p>
+           </div>
+        <button type="submit" style="border-width:0px;text-align:center;text-size-adjust:auto;width:90px; height:35px;">Submit</button>
+    </form>
+</body>

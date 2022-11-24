@@ -1,0 +1,29 @@
+﻿@model List<Upload>
+
+<h3>Student Detail</h3>
+<head>
+   <style>
+   </style>
+</head>
+<body>
+<table class="table table-danger">
+
+    <tr>
+        <th>Name</th>
+        <th>Phonenumber</th>
+        <th>Assignment</th>
+        <th>Delete</th>
+    </tr>
+    @{
+        foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.Name</th>
+                <th>@item.Phonenumber</th>
+                <th><img src="@Url.Content(item.Image)" alt="@System.IO.Path.GetFileName(item.Image)"/></th>
+                <th><a href="/Record/ByName?Name=@item.Name" style="color:darkslategrey; ">Delete</a></th>
+            </tr>
+        }
+    }
+</table>
+</body>
